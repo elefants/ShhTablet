@@ -1,0 +1,14 @@
+
+.counter-container {
+    width: 350px;
+    height: 100px;
+    padding-left: 150px;
+    padding-top: 33px;
+    background-image: url('/assets/img/components/shh-counter-2.png');
+    background-size: cover;
+
+    .digit {
+        padding-left: 29px;
+        font-size: 36px;
+    }
+}
