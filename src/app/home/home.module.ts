@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { CounterComponent } from './components/counter/counter.component';
+import { NoiseChartComponent } from './components/noise-chart/noise-chart.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { CounterComponent } from './components/counter/counter.component';
       }
     ])
   ],
-  declarations: [HomePage, CounterComponent]
+  declarations: [HomePage, CounterComponent, NoiseChartComponent]
 })
 export class HomePageModule {}
