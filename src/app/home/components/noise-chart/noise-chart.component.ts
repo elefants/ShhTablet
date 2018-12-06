@@ -12,6 +12,7 @@ export class NoiseChartComponent implements OnInit {
 
   constructor(private noiseService: NoiseService) { }
 
+  sample: any;
   chart = new Chart({
     chart: {
       type: 'spline',
@@ -27,6 +28,9 @@ export class NoiseChartComponent implements OnInit {
   });
 
   ngOnInit() {
+    this.noiseService.noiseSample.subscribe((x) => {
+      // this.chart.addPoint({ x: x. })
+      this.sample = x;
+    });
   }
-
 }
